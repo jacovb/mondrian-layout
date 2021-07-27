@@ -5,18 +5,23 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <main>
       <title>{pageTitle}</title>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
+      <nav className="flex">
+        <Link
+          to="/"
+          className="flex-auto bg-red-400 text-black text-center mt-16 px-2 py-1 mx-8 rounded-lg hover:bg-red-700 hover:text-white"
+        >
+          Home
+        </Link>
+
+        <Link
+          to="/about"
+          className=" flex-auto bg-red-400 text-black text-center mt-16 px-2 py-1 mx-8 rounded-lg hover:bg-red-700 hover:text-white"
+        >
+          About
+        </Link>
       </nav>
       <h1>{pageTitle}</h1>
-      {children}
+      <div className="bg-blue-200">{children}</div>
     </main>
   )
 }
