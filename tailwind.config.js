@@ -8,7 +8,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight: ["hover", "focus"],
+    },
   },
   plugins: [],
 }

@@ -19,21 +19,21 @@ const Layout = ({ pageTitle, children }) => {
           <nav className="flex h-full w-full items-center justify-center">
             <Link
               to="/"
-              className="flex-1 bg-white border-2 border-black rounded-full py-2 ml-4 mr-2 text-black text-center hover:bg-red-700 hover:text-white hover:scale-50"
+              className="flex-1 bg-white border-2 border-black rounded-full py-2 ml-4 mr-2 text-black text-center hover:bg-blue-700 hover:text-white hover:border-white transition-all duration-300 ease-in-out "
             >
               Home
             </Link>
 
             <Link
               to="/about"
-              className="flex-1 bg-white border-2 border-black rounded-full py-2 mx-2 text-black text-center hover:bg-red-700 hover:text-white hover:scale-50"
+              className="flex-1 bg-white border-2 border-black rounded-full py-2 mx-2 text-black text-center hover:bg-blue-700 hover:text-white hover:border-white transition-all duration-300 ease-in-out"
             >
               About
             </Link>
 
             <Link
               to="/page-2"
-              className="flex-1 bg-white border-2 border-black rounded-full py-2 ml-2 mr-4 text-black text-center hover:bg-red-700 hover:text-white hover:scale-50"
+              className="flex-1 bg-white border-2 border-black rounded-full py-2 ml-2 mr-4 text-black text-center hover:bg-blue-700 hover:text-white hover:border-white transition-all duration-300 ease-in-out"
             >
               Page-2
             </Link>
@@ -42,7 +42,7 @@ const Layout = ({ pageTitle, children }) => {
         <div className="row-start-2 row-end-3 col-start-9 col-end-13 bg-yellow-500"></div>
         <div className="row-start-3 row-end-6 col-start-1 col-end-3 bg-white"></div>
         <div className="row-start-3 row-end-6 col-start-3 col-end-9 bg-white">
-          <h1 className="text-black">{pageTitle}</h1>
+          <h1>{pageTitle}</h1>
           {children}
         </div>
         <div className="row-start-3 row-end-5 col-start-9 col-end-13 bg-white"></div>
