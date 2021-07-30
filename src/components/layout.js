@@ -7,15 +7,15 @@ const Layout = ({ pageTitle, children }) => {
       <title>{pageTitle}</title>
       <div
         id="grid"
-        className="grid grid-cols-12 grid-rows-6 w-full h-full gap-2"
+        className="grid grid-cols-18 grid-rows-12 w-full h-full gap-2"
       >
-        <h1 className="row-start-1 row-end-2 col-start-1 col-end-3 text-white w-full h-full bg-red-500">
+        <h1 className="row-start-1 row-end-3 col-start-1 col-end-3 text-white w-full h-full bg-red-500">
           Hello
         </h1>
-        <div className="row-start-1 row-end-2 col-start-3 col-end-9 bg-white"></div>
-        <div className="row-start-1 row-end-2 col-start-9 col-end-13 bg-white"></div>
-        <div className="row-start-2 row-end-3 col-start-1 col-end-3 bg-white"></div>
-        <div className="row-start-2 row-end-3 col-start-3 col-end-9 bg-blue-500 ">
+        <div className="row-start-1 row-end-3 col-start-3 col-end-13 bg-white"></div>
+        <div className="row-start-1 row-end-3 col-start-13 col-end-19 bg-white"></div>
+        <div className="row-start-3 row-end-5 col-start-1 col-end-3 bg-white"></div>
+        <div className="row-start-3 row-end-5 col-start-3 col-end-11 bg-blue-500 ">
           <nav className="flex h-full w-full items-center justify-center">
             <Link
               to="/"
@@ -39,18 +39,18 @@ const Layout = ({ pageTitle, children }) => {
             </Link>
           </nav>
         </div>
-        <div className="row-start-2 row-end-3 col-start-9 col-end-13 bg-yellow-500"></div>
-        <div className="row-start-3 row-end-6 col-start-1 col-end-3 bg-white"></div>
-        <div className="row-start-3 row-end-6 col-start-3 col-end-9 bg-white">
+        <div className="row-start-3 row-end-5 col-start-11 col-end-19 bg-yellow-500"></div>
+        <div className="row-start-5 row-end-11 col-start-1 col-end-3 bg-white"></div>
+        <div className="row-start-5 row-end-11 col-start-3 col-end-13 bg-white">
           <h1>{pageTitle}</h1>
           {children}
         </div>
-        <div className="row-start-3 row-end-5 col-start-9 col-end-13 bg-white"></div>
-        <div className="row-start-5 row-end-6 col-start-9 col-end-13 bg-blue-500"></div>
-        <div className="row-start-6 row-end-7 col-start-1 col-end-3 bg-white"></div>
-        <div className="row-start-6 row-end-7 col-start-3 col-end-5 bg-red-500"></div>
-        <div className="row-start-6 row-end-7 col-start-5 col-end-9 bg-white"></div>
-        <div className="row-start-6 row-end-7 col-start-9 col-end-13 bg-white"></div>
+        <div className="row-start-5 row-end-9 col-start-13 col-end-19 bg-white"></div>
+        <div className="row-start-9 row-end-11 col-start-13 col-end-19 bg-blue-500"></div>
+        <div className="row-start-11 row-end-13 col-start-1 col-end-3 bg-white"></div>
+        <div className="row-start-11 row-end-13 col-start-3 col-end-6 bg-red-500"></div>
+        <div className="row-start-11 row-end-13 col-start-6 col-end-11 bg-white"></div>
+        <div className="row-start-11 row-end-13 col-start-11 col-end-19 bg-white"></div>
       </div>
     </main>
   )
