@@ -8,7 +8,7 @@ const AboutPage = () => {
   return (
     <Layout pageTitle="About Me">
       <Seo title="About" />
-      <p className="bg-blue-700">Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+      <p> Testing this site built with Gatsby and Tailwind CSS.</p>
     </Layout>
   )
 }

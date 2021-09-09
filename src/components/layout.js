@@ -9,9 +9,7 @@ const Layout = ({ pageTitle, children }) => {
         id="grid"
         className="grid grid-cols-18 grid-rows-12 w-full h-full gap-2"
       >
-        <h1 className="row-start-1 row-end-3 col-start-1 col-end-3 text-white w-full h-full bg-red-500">
-          Hello
-        </h1>
+        <div className="row-start-1 row-end-3 col-start-1 col-end-3 text-white w-full h-full bg-red-500"></div>
         <div className="row-start-1 row-end-3 col-start-3 col-end-13 bg-white"></div>
         <div className="row-start-1 row-end-3 col-start-13 col-end-19 bg-white"></div>
         <div className="row-start-3 row-end-5 col-start-1 col-end-3 bg-white"></div>
@@ -35,7 +33,7 @@ const Layout = ({ pageTitle, children }) => {
               to="/page-2"
               className="flex-1 bg-white border-2 border-black rounded-full py-2 ml-2 mr-4 text-black text-center hover:bg-blue-700 hover:text-white hover:border-white transition-all duration-300 ease-in-out"
             >
-              Page-2
+              Portfolio
             </Link>
           </nav>
         </div>
